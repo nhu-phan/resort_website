@@ -1,0 +1,216 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome To The Untamed</title>
+        <link rel="stylesheet" href="css/style-new.css">
+        <link rel="stylesheet" href="css/aos.css">
+        <!-- <script src="script/home-script.js"></script> -->
+        <script src="script/script.js"></script>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <!-- Icon Library-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Fade in scroll plugin-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+        <!--Full screen scroll -->
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <section id="scroll-down">
+            <div><img id="scroll-img" src="images & files/down-arrow.png" alt="down arrow"></div>
+        </section>
+        <div class = "popup">
+            <h3>RESERVATION</h3>
+            <hr>
+            <p>You have selected a <span id="numOfDays"></span>-days package from
+            <span></span> to <span></span>. Do you wish to proceed to the booking page?</p>
+            <div>
+                <button class="read-more" id="cancelpopup" >Cancel</button>
+                <button id="reservenow" class="read-more" onclick="toBooking()">Next</button> 
+            </div>
+        </div>
+        
+        <!-- SECTION 1 -->
+        <main id="scroll-1">
+            <!-- OVERLAY NAVIGATION-->
+            <div>
+                <img src="images & files/mountain-girl.png" alt="girl on mountain">
+                <!--<div class="shadow"></div>-->
+            </div>
+
+            <header id="homepage-header">
+                <h1 class="resort-logo">
+                    <a href="index.html">THE UNTAMED KINGDOM</a>
+                </h1>
+                <nav class = "header-nav">
+                    <a href="activities.html">Activities</a>
+                    <a href="prepare.html">Prepare</a>
+                    <a href="booking.html">Booking</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About</a>
+                </nav>
+                
+                <a class ="hamburger-menu" onclick="openOverlayNav()">
+                    <i class="material-icons">menu</i>
+                </a>
+            </header>
+
+            <nav class="overlay-nav"> 
+                <a href="activities.html">Activities</a>
+                <a href="prepare.html">Prepare</a>
+                <a href="booking.html">Booking</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+                <a onclick="closeOverlayNav()">Exit</a> 
+            </nav>
+
+            <article>
+                <h2>LET YOUR IMAGINATION GO WILD</h2>
+                <div id = "date-select">
+                    <input type="date" name="start">
+                    <input type="date" name="end">
+                    <!--<a href="booking.html">Reserve Now</a> -->
+                    <button class="read-more" id="showbookingpopup">Reserve Now</button>
+                </div>
+            </article>
+            
+        </main>
+
+       
+        
+        <section id="scroll-2">
+            <article data-aos="fade-up">
+            <h3>Us In A Nutshell</h3>
+            <h4> THE UNTAMED KINGDOM, established in 1998, is selected as the most popular 
+                holiday destination by the RW Travel Magazine for ten consecutive years (2010-2020).
+                It is the perfect place for you to get away from the hustle and bustle of the city life and to find the true meaning of
+                inner and outer peace.
+            </h4>
+            <a class = "read-more" href="about.html">Read More</a>
+            </article>
+
+        </section>
+        <section id="scroll-3">
+            <h3>Endless Activities</h3>
+            <article>
+                <div data-aos="zoom-in-up">
+                    <img src="images & files/gliding.png">
+                    <p>Line Gliding</p>
+                </div>
+                <div data-aos="zoom-in-up">
+                    <img src="images & files/tiger.png">
+                    <p>Feed the tigers</p>
+                </div>
+                <div data-aos="zoom-in-up">
+                    <img src="images & files/wolf.png">
+                    <p>Wolf Spotting</p>
+                </div>
+                <div data-aos="zoom-in-up">
+                    <img src="images & files/fish.png">
+                    <p>Fish pedicure</p>
+                </div>
+            </article>
+        </section>
+        <section id="scroll-4">
+            
+            <article>
+                <h3 data-aos="fade-up">Take Your Furry Friends</h3>
+                <img data-aos="fade-up" src="images & files/furryfriends.png" alt="dogs running">
+                <h4 data-aos="fade-up"> THE UNTAMED KINGDOM is pet-friendly.
+                    Take your furry friends at no extra charges and let them experience 
+                    the beauty of nature. Make sure you select the correct 
+                    pet options when you make a booking so that we can prepare before to your arrival.
+                </h4>                
+                <a class = "read-more" href="about.html">Read More</a>
+            </article>    
+        </section>
+        <section id="scroll-5">
+            <article>
+                <h3 data-aos="zoom-in">Up For Some Discounts?</h3>
+                <h4 data-aos="zoom-in"> THE UNTAMED KINGDOM understands that everyone loves discounts.
+                    Take a short this <a href="quiz.html">quiz</a>. If you get at least 80% of the questions correctly, 
+                    you will get 10% discount when you make a reservation plus a dining coupon 
+                    on your visit.
+                </h4>
+                <a  data-aos="zoom-in" class = "read-more" href="quiz.html">Take The Quiz</a>
+            </article>   
+
+        </section>
+
+        <!--ZOOM IN AS SCROLLED IN -->
+
+        <section id="scroll-6">
+            <h3>Testimonials</h3>
+            <h4>Home to Tamed and Friendly Animal Friends</h4>
+        </section>
+            
+        <section id="scroll-7">
+            <article>
+                <h3 data-aos="zoom-in">Get Updated</h3>
+                <h4 data-aos="zoom-in"> Sign up to our mailing system and stay up to date with our
+                    new promotions and events.  
+                </h4>
+                <div>
+                    <label for="email-adress">Email Address: </label>
+                    <input type="email" name="email" id="emailform">
+                    <input type="submit" id="subscribebutton">
+                </div>
+            </article>  
+        </section>
+        <footer>
+            <h1 class="resort-logo">
+                <a href="index.html">THE UNTAMED KINGDOM</a>
+            </h1>
+            <aside>
+                <div>
+                    <h4>Find Us On</h4>
+                    <div>
+                        <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+                        <a href="http://www.instagram.com" class="fa fa-instagram"></a>
+                        <a href="http://www.twitter.com" class="fa fa-twitter"></a>
+                        <a href="http://www.snapchat.com" class="fa fa-snapchat"></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Navigation</h4>
+                    <div>
+                        <a href="hosts.html">Hosts</a>
+                        <a href="activities.html">Activities</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="about.html">About</a>
+                        <a href="booking.html">Reservation</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Reference</h4>
+                    <p>Full credits are given to the original owners of the creative common photos and
+                        the creators of the plugins used.
+                        <a href="referencelist.html">Click for Reference List</a>
+                    </p>
+                </div>
+            </aside>
+            <hr>
+            <p class="copyright-message">Copyright © The Untamed Kingdom. Designed and Implemented by Nhu Phan (s4397098) for the purpose of DECO1400 Assessment.</p>
+
+        </footer>
+        
+
+
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+         AOS.init();
+        </script>
+
+    </body>

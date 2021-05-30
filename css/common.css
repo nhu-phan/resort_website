@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    margin: 0 15px 0 15px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+}
+nav > a {
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+nav div a {
+    font-family: "Open Sans", sans-serif;
+    padding: 3px 0px 3px 25px;
+}
+
+nav div a:hover {
+    text-decoration: underline overline;
+    font-weight: bold;
+}

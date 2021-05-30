@@ -1,0 +1,268 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Reservation</title>
+        <link rel="stylesheet" href="css/style-new.css">
+        <link rel="stylesheet" href="css/aos.css">
+        <script src="script/script.js"></script>
+        <script src="script/aos.js"></script>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- Icon Library-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Fade in scroll plugin-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="AOS.js"></script>
+        <!--Full screen scroll -->
+        <link rel="stylesheet" type="text/css" href="fullpage.css" />
+        <script type="text/javascript" src="fullpage.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <header id="homepage-header">
+            <h1 class="resort-logo">
+                <a href="index.html">THE UNTAMED KINGDOM</a>
+            </h1>
+            <nav class = "header-nav">
+                <a href="activities.html">Activities</a>
+                <a href="prepare.html">Prepare</a>
+                <a class = "current-page"  href="booking.html">Booking</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </nav>
+            
+            <a class ="hamburger-menu" onclick="openOverlayNav()">
+                <i class="material-icons">menu</i>
+            </a>
+        </header>
+        <nav class="overlay-nav"> 
+            <a href="activities.html">Activities</a>
+            <a href="prepare.html">Prepare</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a onclick="closeOverlayNav()">Exit</a> 
+        </nav>
+        <section id="scroll-down">
+            <div><img id ="scroll-img" src="images & files/down-arrow.png"></div>
+        </section>
+        <section>
+            <form>
+                <h3>Personal Details</h3>
+                <fieldset>
+                        <div>
+                        <label for="name">Full Name: </label>
+                        <input type="text" id="fname" name="visitor_name" placeholder="First Name" required>
+                    </div>
+                    <div>
+                        <label for="dob">Date Of Birth: </label>
+                        <input type="date" id="dob" name="visitor_dob" required>
+                    </div>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="text" id="email" name="email" required>
+                    </div>  
+                    <div>
+                        <label for="address">Address: </label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div>
+                        <label for="gender">Gender: </label>
+                        <input type="radio" id="gender1" name="gender" value="Male">
+                        <label for="contactChoice1">Male</label>
+                        <input type="radio" id="gender2" name="gender" value="Female">
+                        <label for="contactChoice2">Female</label>
+                        <input type="radio" id="gender3" name="gender" value="Other">
+                        <label for="contactChoice2">Other</label>
+                    </div>
+                </fieldset>
+            </form>
+            
+        </section>
+        <section id="trip-form">
+            <form>
+                <h3>The Trip</h3>
+                <fieldset>
+                    <div class="dateform">
+                        <label for = "startDate">Trip Start Date: </label>
+                        <input type="date" name="start" min="Date()">
+                    </div>
+                    <div class="dateform">
+                        <label for = "startDate">Trip End Date: </label>
+                        <input type="date" name="end">
+                    </div>
+                    <div>
+                        <label for = "numberOfVisitors">Number Of Visitors: </label>
+                        <input type="text" id="numberOfVisitors" name="numberOfVisitors" required>
+                    </div>
+                    <div>
+                        <label for="pets">Will you be taking any furry friend? </label>
+                        <input type="radio" id="petYes" name="pet" value="yesPet">
+                        <label for="petYes">Yes</label>
+                        <input type="radio" id="petNo" name="pet" value="noPet">
+                        <label for="petNo">No</label>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="accommodation">
+            <form>
+                <h3>Accommodation Package</h3>
+                <fieldset class = "accommodationSelect">
+                    
+                        <div>
+                            <div class="accommodationChoice">
+                                <img src="images & files/cottage1.png" alt="cottage">
+                                <input type="radio" id="accommodation1" name="accommodation" value="cottage1">
+                                <label for="accommodationOne">Thatched Cottage</label>
+                                <div> 
+                                    <i class="material-icons">pets</i>
+                                    <i class="material-icons">king_bed</i>
+                                    <i class="material-icons">dry_cleaning</i>
+                                </div> 
+                                <p>Experience the best nature experience with the thatched cottage. 
+                                    The cottage is located next to the lake where the otters reside.
+                                    It is equipped with excellent facilities and is pet-friendly. 
+                                    Perfect for those travelling alone.
+                                    Fully disconnect from the outside world and recharge because there is no wifi available.
+                                </p>
+                            </div>
+                            <div class="accommodationChoice">
+                                <img src="images & files/cottage2.png" alt="cottage">
+                                <input type="radio" id="accommodation2" name="accommodation" value="cottage2">
+                                <label for="accommodationTwo">Cozy Cottage</label>
+                                <div>
+                                    <i class="material-icons">wifi</i>
+                                    <i class="material-icons">pets</i>
+                                    <i class="material-icons">king_bed</i>
+                                    <i class="material-icons">king_bed</i>
+                                    <i class="material-icons">dry_cleaning</i>
+                                </div>
+                                <p>Experience the best nature experience with the thatched cottage. 
+                                    The cottage is located next to the lake where the otters reside.
+                                    It is equipped with excellent facilities and is pet-friendly.
+                                    It is the perfect location if you are travelling with your friends or family, or just with your pets.
+                                </p>
+                                
+                            </div> 
+        
+                            <div class="accommodationChoice">
+                                <img src="images & files/cottage3.png" alt="accommodation">
+                                <input type="radio" id="accommodation3" name="accommodation" value="cottage3">
+                                <label for="accommodationThree">Getaway House</label>
+                                <div>
+                                    <i class="material-icons">wifi</i>
+                                    <i class="material-icons">pets</i>
+                                    <i class="material-icons">king_bed</i>
+                                    <i class="material-icons">king_bed</i>
+                                    <i class="material-icons">king_bed</i>
+                                    <i class="material-icons">dry_cleaning</i>
+                                </div>
+                                <p>Live the most luxurious life. 
+                                    Experience the best nature experience with the thatched cottage. 
+                                    The cottage is located next to the lake where the otters reside.
+                                    It is equipped with excellent facilities and is pet-friendly.
+                                    It is the perfect location if you are travelling with your friends or family, or just with your pets.
+                                </p> 
+                                
+                            </div> 
+                        
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    
+        <section id="booking-feesum">
+            <summary>
+                
+                <h3>Fee Summary</h3>
+                <button onclick="showFeeSummary()">Show Me My Fees &#8744;</button>
+                
+                <div>
+                    <div class = "currency-selection">
+                        <label for="currency-selection">Currency: </label>
+                        <button>AUD</button>
+                        <button>USD</button> 
+                        <button>EUR</button> 
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Fee Type</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td>Accomodation</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Activities Fee</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Amenities</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Discounts</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <div>
+                        <button onclick=exitBookingPopup()>Edit</button>
+                        <button onclick="hasBooked()">Confirm</button> 
+                    </div>
+                </div>
+
+
+            </summary>
+        </section>
+
+        <footer>
+            <h1 class="resort-logo">
+                <a href="index.html">THE UNTAMED KINGDOM</a>
+            </h1>
+            <aside>
+                <div>
+                    <h4>Find Us On</h4>
+                    <div>
+                        <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+                        <a href="http://www.instagram.com" class="fa fa-instagram"></a>
+                        <a href="http://www.twitter.com" class="fa fa-twitter"></a>
+                        <a href="http://www.snapchat.com" class="fa fa-snapchat"></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Navigation</h4>
+                    <div>
+                        <a href="hosts.html">Hosts</a>
+                        <a href="activities.html">Activities</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="about.html">About</a>
+                        <a href="booking.html">Reservation</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Reference</h4>
+                    <p>Full credits are given to the original owners of the creative common photos and
+                        the creators of the plugins used.
+                        <a href="referencelist.html">Click for Reference List</a>
+                    </p>
+                </div>
+            </aside>
+            <hr>
+            <p class="copyright-message">Copyright © The Untamed Kingdom. Designed and Implemented by Nhu Phan (s4397098) for the purpose of DECO1400 Assessment.</p>
+
+        </footer>
+        </body>

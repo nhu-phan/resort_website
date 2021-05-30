@@ -1,0 +1,145 @@
+* {
+    margin:0;
+    padding:0;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+nav {
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 0;
+    padding: 5px 2px 5px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    
+  
+
+}
+nav div a:hover {
+    text-decoration: underline;
+}
+
+
+.resort-logo a {
+    padding: 5px 0px 0px 5px;
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    z-index: 2;
+   
+}
+nav > a:last-child {
+    margin-right: 20px;
+    padding: 3px 8px 3px 8px;
+    border: 2px solid black;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+nav > a:last-child:hover {
+    margin-right: 20px;
+    padding: 3px 8px 3px 8px;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+main img {
+    width: 30vw;
+    position: absolute;
+}
+
+main img:nth-child(2){
+    position: relative;
+    border: 3px solid red;
+    visibility: hidden;
+}
+
+section {
+    padding: 0 10vw 0 10vw;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+article {
+    display: inline;
+    height: 10%;
+    padding-bottom: 0;
+}
+
+section:nth-child(1) > img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    object-fit: cover;
+}
+
+
+
+section:nth-child(1) h2 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+section:nth-last-of-type(2n) {
+    flex-direction: row-reverse;
+    background: #DDE5B6;
+    z-index: 33;
+    
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+
+    section {
+        flex-direction: column;
+    }
+    section:nth-last-of-type(2n-1) {
+        flex-direction: column;
+    }
+}
+
+
+
